@@ -14,5 +14,5 @@ def load_repo(root: str) -> list[dict]:
             text = path.read_text(encoding='utf-8')
         except UnicodeEncodeError:
             continue
-        docs.append({"path": str(path.relative_to(root)), "text: ": text})
+        docs.append({"path": str(path.relative_to(root)), "text": text})
     return docs
