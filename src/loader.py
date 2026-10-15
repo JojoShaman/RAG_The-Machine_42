@@ -1,7 +1,7 @@
 from pathlib import Path
 
 SKIP_DIRS = {".git", "node_modules", "__pychache__", ".venv", "build", "dist"}
-EXTS = {".py", ".md", ".rst", ".txt", ".c", ".h", ".sh", ".toml", ".yaml"}
+EXTS = {".py", ".md", ".txt"}
 
 def load_repo(root: str) -> list[dict]:
     docs: list[dict] = []
